@@ -1,0 +1,7 @@
+SQL> CREATE TABLE MY_EMPLOYEE (id NUMBER(4) NOT NULL,
+  2  last_name VARCHAR2(25), first_name VARCHAR2(25),
+  3  userid VARCHAR2(8), salary NUMBER(9,2));
+
+Table created.
+
+SQL> spool off

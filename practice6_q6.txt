@@ -1,0 +1,14 @@
+SQL> SELECT department_id, last_name, job_id
+  2  FROM employees
+  3  WHERE department_id IN
+  4  		(SELECT department_id
+  5  		 FROM departments
+  6  		 WHERE department_name = 'Executive');
+
+DEPARTMENT_ID LAST_NAME                 JOB_ID                                  
+------------- ------------------------- ----------                              
+           90 King                      AD_PRES                                 
+           90 Kochhar                   AD_VP                                   
+           90 De Haan                   AD_VP                                   
+
+SQL> spool off

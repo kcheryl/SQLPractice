@@ -1,0 +1,9 @@
+SQL> SELECT last_name, department_id
+  2  FROM employees
+  3  WHERE employee_id = 176;
+
+LAST_NAME                 DEPARTMENT_ID                                         
+------------------------- -------------                                         
+Taylor                               80                                         
+
+SQL> spool off

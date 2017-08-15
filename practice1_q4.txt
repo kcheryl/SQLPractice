@@ -1,0 +1,11 @@
+True
+
+SQL> SELECT *
+  2  FROM job_grades;
+FROM job_grades
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> spool off

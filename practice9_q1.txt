@@ -1,0 +1,5 @@
+SQL> CREATE TABLE dept (id NUMBER(7) PRIMARY KEY, name VARCHAR2(25));
+
+Table created.
+
+SQL> spool off

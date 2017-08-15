@@ -1,0 +1,7 @@
+SQL> CREATE TABLE emp (id NUMBER(7), last_name VARCHAR2(25),
+  2  first_name VARCHAR2(25),  dept_id NUMBER(7)
+  3  CONSTRAINT emp_dept_id REFERENCES dept (id));
+
+Table created.
+
+SQL> spool off

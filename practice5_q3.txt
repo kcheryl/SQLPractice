@@ -1,0 +1,20 @@
+SQL> SELECT last_name, job_id, e.department_id, department_name
+  2  FROM employees e
+  3  JOIN departments d
+  4  ON d.department_id = e.department_id
+  5  JOIN locations l
+  6  ON d.location_id = l.location_id
+  7  WHERE city = 'Toronto';
+
+LAST_NAME                 JOB_ID     DEPARTMENT_ID                              
+------------------------- ---------- -------------                              
+DEPARTMENT_NAME                                                                 
+------------------------------                                                  
+Hartstein                 MK_MAN                20                              
+Marketing                                                                       
+                                                                                
+Fay                       MK_REP                20                              
+Marketing                                                                       
+                                                                                
+
+SQL> spool off

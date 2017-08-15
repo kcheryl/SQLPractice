@@ -1,0 +1,7 @@
+SQL> CREATE VIEW employees_vu (employee_id, employee, department_id)
+  2  AS SELECT employee_id, last_name, department_id
+  3  FROM employees;
+
+View created.
+
+SQL> spool off

@@ -1,0 +1,15 @@
+SQL> SELECT employee_id, last_name
+  2  sal x 12 ANNUAL SALARY
+  3  FROM employees;
+sal x 12 ANNUAL SALARY
+    *
+ERROR at line 2:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> spool off
+
+1. should be * instead of x
+2. sal is not a column in employees table
+3. should add a comma after last_name
+4. should be "ANNUAL SALARY" instead of ANNUAL SALARY
